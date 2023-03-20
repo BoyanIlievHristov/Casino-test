@@ -1,0 +1,171 @@
+{
+  "id": "e60478c6-76e0-4607-9ba2-cdb47a2ef203",
+  "version": "2.0",
+  "name": "Casino test",
+  "url": "https://moneygaming.qa.gameaccount.com",
+  "tests": [{
+    "id": "58cb275b-ccd1-42db-971e-d300c60b8203",
+    "name": "Casino question 1",
+    "commands": [{
+      "id": "008c341e-3014-4a50-a93d-cf1b055ebd6c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76a13ddb-910c-46a3-b053-9dd467b8e2b3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "169d44d4-0ce0-49f2-bd61-dcde78a2f176",
+      "comment": "",
+      "command": "click",
+      "target": "css=.newUser",
+      "targets": [
+        ["css=.newUser", "css:finder"],
+        ["xpath=//a[contains(text(),'Join Now!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sign-up.shtml')]", "xpath:href"],
+        ["xpath=//div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ae59dbc-f749-44ac-8949-f4c19a9c5561",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=map(title)", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//select[@id='title']", "xpath:attributes"],
+        ["xpath=//form[@id='signupForm']/fieldset/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42e2241f-a007-4978-a70f-cf25e50e424c",
+      "comment": "",
+      "command": "select",
+      "target": "id=title",
+      "targets": [],
+      "value": "label=Mr"
+    }, {
+      "id": "104c0f2e-5027-488f-aef8-2c871fe0e940",
+      "comment": "",
+      "command": "click",
+      "target": "id=forename",
+      "targets": [
+        ["id=forename", "id"],
+        ["name=map(firstName)", "name"],
+        ["css=#forename", "css:finder"],
+        ["xpath=//input[@id='forename']", "xpath:attributes"],
+        ["xpath=//form[@id='signupForm']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83f49d85-b4f0-4042-9398-ab3819acf555",
+      "comment": "",
+      "command": "type",
+      "target": "id=forename",
+      "targets": [
+        ["id=forename", "id"],
+        ["name=map(firstName)", "name"],
+        ["css=#forename", "css:finder"],
+        ["xpath=//input[@id='forename']", "xpath:attributes"],
+        ["xpath=//form[@id='signupForm']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": "Boyan"
+    }, {
+      "id": "a078e1c6-622e-4e9c-a940-b8ac39cbd5c5",
+      "comment": "",
+      "command": "click",
+      "target": "name=map(lastName)",
+      "targets": [
+        ["name=map(lastName)", "name"],
+        ["css=fieldset:nth-child(1) > .required:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='map(lastName)']", "xpath:attributes"],
+        ["xpath=//form[@id='signupForm']/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1144d3bc-9f93-43b8-b3ef-fe001ad35be5",
+      "comment": "",
+      "command": "type",
+      "target": "name=map(lastName)",
+      "targets": [
+        ["name=map(lastName)", "name"],
+        ["css=.valid:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='map(lastName)']", "xpath:attributes"],
+        ["xpath=//form[@id='signupForm']/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Hristov"
+    }, {
+      "id": "cb604177-0062-405c-86c1-3dfc1a2d1e39",
+      "comment": "",
+      "command": "click",
+      "target": "name=map(terms)",
+      "targets": [
+        ["name=map(terms)", "name"],
+        ["xpath=(//input[@id='checkbox'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='signupForm']/fieldset[5]/input[3]", "xpath:idRelative"],
+        ["xpath=//fieldset[5]/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbbbf939-f5a7-4342-b919-c5e211c9567f",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset:nth-child(1) > .error:nth-child(12)",
+      "targets": [
+        ["css=fieldset:nth-child(1) > .error:nth-child(12)", "css:finder"],
+        ["xpath=//form[@id='signupForm']/fieldset/label[5]", "xpath:idRelative"],
+        ["xpath=//label[5]", "xpath:position"],
+        ["xpath=//label[contains(.,'This field is required')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "479796c3-e682-4e0c-b3ec-41b1855cfacb",
+      "comment": "",
+      "command": "click",
+      "target": "id=form",
+      "targets": [
+        ["id=form", "id"],
+        ["css=#form", "css:finder"],
+        ["xpath=//input[@id='form']", "xpath:attributes"],
+        ["xpath=//form[@id='signupForm']/fieldset[6]/input", "xpath:idRelative"],
+        ["xpath=//fieldset[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb1f96bc-ca8e-4e26-bd60-2bae5d428a39",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=fieldset:nth-child(1) > .error:nth-child(12)",
+      "targets": [
+        ["css=fieldset:nth-child(1) > .error:nth-child(12)", "css:finder"],
+        ["xpath=//form[@id='signupForm']/fieldset/label[5]", "xpath:idRelative"],
+        ["xpath=//label[5]", "xpath:position"],
+        ["xpath=//label[contains(.,'This field is required')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "32027936-3027-405f-ae0d-960f1ec236e0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["58cb275b-ccd1-42db-971e-d300c60b8203"]
+  }],
+  "urls": ["https://moneygaming.qa.gameaccount.com/"],
+  "plugins": []
+}
